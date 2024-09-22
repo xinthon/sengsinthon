@@ -46,23 +46,25 @@ export default function I18nLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {process.env.NODE_ENV == "development" ? (
-          <UnderDevelopmentLayout>
-            <div className="text-center">
-              <h1>Our Website is Coming Soon!</h1>
-              <div className="construction-icon">🚧</div>
-              <p>Stay tuned for something amazing.</p>
-              <p>
-                Contact:{" "}
-                <a href="mailto:sengsinthon.dev@gmail.com">
-                  sengsinthon.dev@gmail.com
-                </a>
-              </p>
-            </div>
-          </UnderDevelopmentLayout>
-        ) : (
-          <BaseLayout>{children}</BaseLayout>
-        )}
+        <BaseLayout>
+          {true ? (
+            <UnderDevelopmentLayout>
+              <div className="text-center">
+                <h1>Our Website is Coming Soon!</h1>
+                <div className="construction-icon">🚧</div>
+                <p>Stay tuned for something amazing.</p>
+                <p>
+                  Contact:{" "}
+                  <a href="mailto:sengsinthon.dev@gmail.com">
+                    sengsinthon.dev@gmail.com
+                  </a>
+                </p>
+              </div>
+            </UnderDevelopmentLayout>
+          ) : (
+            children
+          )}
+        </BaseLayout>
       </body>
     </html>
   );
