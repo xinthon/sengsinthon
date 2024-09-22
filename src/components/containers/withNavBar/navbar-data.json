@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Blogs",
+    "link": "blogs"
+  },
+  {
+    "title": "Projects",
+    "link": "projects"
+  },
+  {
+    "title": "Experiences",
+    "link": "experiences"
+  },
+  {
+    "title": "About Me",
+    "link": "about-me"
+  }
+]

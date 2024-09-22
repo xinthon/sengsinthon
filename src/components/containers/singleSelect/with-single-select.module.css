@@ -1,0 +1,41 @@
+.whats-new-container {
+  padding: 20px;
+  text-align: left;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 5px 0 20px 0;
+}
+
+.filter-buttons {
+  display: inline-block;
+}
+
+.filter-button {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: white;
+  color: black;
+}
+
+.filter-button.close {
+  background-color: #333;
+  font-size: 1.2rem;
+  padding: 5px 12px;
+}

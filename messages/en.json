@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "appName": "SENG SINTHON",
+    "home": "Home",
+    "blogs": "Blogs",
+    "experiences": "Experiences",
+    "projects": "Projects",
+    "about-me": "About Me"
+  }
+}
