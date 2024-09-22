@@ -5,6 +5,7 @@ import BaseLayout from "@/layouts/Base";
 
 import { unstable_setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import UnderDevelopmentLayout from "@/layouts/UnderDevelopment";
 
 const geistSans = localFont({
   src: "./../fonts/GeistVF.woff",
@@ -45,7 +46,23 @@ export default function I18nLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <BaseLayout>{children}</BaseLayout>
+        {process.env.NODE_ENV == "development" ? (
+          <UnderDevelopmentLayout>
+            <div className="text-center">
+              <h1>Our Website is Coming Soon!</h1>
+              <div className="construction-icon">🚧</div>
+              <p>Stay tuned for something amazing.</p>
+              <p>
+                Contact:{" "}
+                <a href="mailto:sengsinthon.dev@gmail.com">
+                  sengsinthon.dev@gmail.com
+                </a>
+              </p>
+            </div>
+          </UnderDevelopmentLayout>
+        ) : (
+          <BaseLayout>{children}</BaseLayout>
+        )}
       </body>
     </html>
   );
