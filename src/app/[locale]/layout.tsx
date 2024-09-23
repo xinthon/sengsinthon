@@ -53,12 +53,6 @@ export default function I18nLayout({
                 <h1>Our Website is Coming Soon!</h1>
                 <div className="construction-icon">🚧</div>
                 <p>Stay tuned for something amazing.</p>
-                <p>
-                  Contact:{" "}
-                  <a href="mailto:sengsinthon.dev@gmail.com">
-                    sengsinthon.dev@gmail.com
-                  </a>
-                </p>
               </div>
             </UnderDevelopmentLayout>
           ) : (
